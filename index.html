@@ -8,8 +8,53 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- https://unsplash.com/photos/road-winds-through-a-desert-landscape-framed-by-rocks-cgV0QsT_7z4 -->
+    <div class="container">
+        <div class="left-side">
+            <img src="resources/bg.jpg" alt="Photo of rocky hills">
+            <div class="logo">
+                <div class="text">Time Travel</div>
+                <img src="resources/airplane.svg" alt="Airplane icon">
+            </div>
+            <div class="credit">
+                <p>Photo by <a href="https://unsplash.com/@joshuaearle">Jonathan Ikemura</a> on <a href="https://unsplash.com/photos/road-winds-through-a-desert-landscape-framed-by-rocks-cgV0QsT_7z4">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="info-container">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <div class="form-container">
+                <p>Let's do this!</p>
+                <form id="signup-form" action="https://httpbin.org/" method="post">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" required>
+                    
+                </form>
+            </div>
+            <button type="submit" form="signup-form">Sign up</button>
+            <div class="login-container">
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
