@@ -1,5 +1,7 @@
 :root {
     --box-shadow: rgba(0, 0, 0, 0.15);
+    --valid-red: #de9494;
+    --valid-green: #8BC34A;
 }
 
 body {
@@ -86,8 +88,8 @@ body {
     font-size: 10px;
 }
 
-.credit:hover {
-    
+.credit a:hover {
+    color: #6590a1;
 }
 
 
@@ -148,7 +150,9 @@ form#signup-form {
         font-size: 14px;
     }
 
-
+    input + div {
+        display: none;
+    }
 
     input {
         height: 2rem;
@@ -169,10 +173,14 @@ form#signup-form {
         border-color: #2596be;
     }
     input:invalid:not(:placeholder-shown):not(:focus) {
-        border-color: #de9494;
+        border-color: var(--valid-red);
         background-image: url("resources/close.svg");
         background-repeat: no-repeat;
         background-position: right 10px center;
+
+        + div {
+            display: block;
+        }
     }
 
     input:valid {
@@ -180,7 +188,13 @@ form#signup-form {
         background-repeat: no-repeat;
         background-position: right 10px center;
         padding-right: 30px;
-        border-color: #8BC34A;
+        border-color: var(--valid-green);
+    }
+
+    .error-message {
+        color: var(--valid-red);
+        font-size: 12px;
+        margin-top: 4px;
     }
 }
 
@@ -219,7 +233,7 @@ form#signup-form {
     color: #473031;
 }
 .login-container a:hover {
-    color:#3c5f6e
+    color:#608797
 }
 
 
