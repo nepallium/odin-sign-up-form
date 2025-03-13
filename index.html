@@ -14,16 +14,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- https://unsplash.com/photos/road-winds-through-a-desert-landscape-framed-by-rocks-cgV0QsT_7z4 -->
     <div class="container">
         <div class="left-side">
-            <img src="resources/bg.jpg" alt="Photo of rocky hills">
+            <!-- <div class="bg-img"> -->
+            <img id="bg-img" src="resources/bg.jpg" alt="Photo of rocky hills">
+            <!-- </div> -->
             <div class="logo">
-                <div class="text">Time Travel</div>
-                <img src="resources/airplane.svg" alt="Airplane icon">
+                <div class="text">Time</div> 
+                <img class="odin-logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin logo">
+                <div class="text">Travel</div>
             </div>
             <div class="credit">
-                <p>Photo by <a href="https://unsplash.com/@joshuaearle">Jonathan Ikemura</a> on <a href="https://unsplash.com/photos/road-winds-through-a-desert-landscape-framed-by-rocks-cgV0QsT_7z4">Unsplash</a></p>
+                <p>Photo by <a href="https://unsplash.com/@cristina_gottardi">Jonathan Ikemura</a> on <a href="https://unsplash.com/photos/brown-rock-formation-under-blue-sky-CSpjU6hYo_0">Unsplash</a></p>
             </div>
         </div>
         <div class="right-side">
@@ -34,22 +36,35 @@
             <div class="form-container">
                 <p>Let's do this!</p>
                 <form id="signup-form" action="https://httpbin.org/" method="post">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" required>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" required>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required>
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password" required>
-                    
+                    <div class="row1">
+                        <label for="first-name">First Name
+                            <input type="text" name="first-name" id="first-name" required>
+                        </label>
+                        <label for="last-name">Last Name
+                            <input type="text" name="last-name" id="last-name" required>
+                        </label>
+                    </div>
+                    <div class="row2">
+                        <label for="email">Email
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                        <label for="phone">Phone Number
+                            <input type="tel" name="phone" id="phone" required>
+                        </label>
+                    </div>
+                    <div class="row3">
+                        <label for="password">Password
+                            <input type="password" name="password" id="password" required>
+                        </label>
+                        <label for="confirm-password">Confirm Password
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </label>
+                    </div>
                 </form>
             </div>
-            <button type="submit" form="signup-form">Sign up</button>
+            <div class="submit-btn">
+                <button type="submit" form="signup-form">Create Account</button>
+            </div>
             <div class="login-container">
                 <p>Already have an account?</p>
                 <a href="#">Log in</a>
