@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -35,29 +36,29 @@
             </div>
             <div class="form-container">
                 <p>Let's do this!</p>
-                <form id="signup-form" action="https://httpbin.org/" method="post">
+                <form id="signup-form" action="https://httpbin.org/post" method="post">
                     <div class="row1">
                         <label for="first-name">First Name
-                            <input type="text" name="first-name" id="first-name" required>
+                            <input placeholder=" " type="text" name="first-name" id="first-name" required>
                         </label>
                         <label for="last-name">Last Name
-                            <input type="text" name="last-name" id="last-name" required>
+                            <input placeholder=" " type="text" name="last-name" id="last-name" required>
                         </label>
                     </div>
                     <div class="row2">
                         <label for="email">Email
-                            <input type="email" name="email" id="email" required>
+                            <input placeholder=" " type="email" name="email" id="email" required>
                         </label>
                         <label for="phone">Phone Number
-                            <input type="tel" name="phone" id="phone" required>
+                            <input placeholder=" " pattern="^\d{10}$" type="tel" name="phone" id="phone" required>
                         </label>
                     </div>
                     <div class="row3">
                         <label for="password">Password
-                            <input type="password" name="password" id="password" required>
+                            <input pattern="^(?=.*\d).{8,}$" placeholder=" " type="password" name="password" id="password" required>
                         </label>
                         <label for="confirm-password">Confirm Password
-                            <input type="password" name="confirm-password" id="confirm-password" required>
+                            <input placeholder=" " type="password" name="confirm-password" id="confirm-password" required>
                         </label>
                     </div>
                 </form>
